@@ -1,0 +1,35 @@
+/*-------------name the grid classes here --------------*/
+@import "grid";
+
+.grid-container{
+  @include row("row", "col", 12, 10);
+}
+
+.main-container{
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px;
+}
+
+.row{
+  background: #e3e3e3;
+}
+
+.col{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.column-wrapper{
+  background: #8fc5ff;
+  text-align: center;
+  min-height: 50px;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+h5{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

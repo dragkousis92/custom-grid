@@ -1,0 +1,681 @@
+/*-------------name the grid classes here --------------*/
+.grid-container .row {
+  display: block;
+  height: 100%;
+  letter-spacing: -.215em;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  overflow: initial; }
+  .grid-container .row:before, .grid-container .row:after {
+    display: table;
+    content: " ";
+    clear: both; }
+  .grid-container .row-padding {
+    margin: -2.5px; }
+  .grid-container .row__table {
+    display: table;
+    width: 100%; }
+    .grid-container .row__table .col {
+      display: table-cell !important;
+      vertical-align: middle !important; }
+  .grid-container .row .col {
+    display: inline-block;
+    height: 100%;
+    letter-spacing: normal;
+    vertical-align: top;
+    float: left;
+    box-sizing: border-box; }
+    .grid-container .row .col-1\/1 {
+      width: 100%; }
+    .grid-container .row .col-1\/2 {
+      width: 50%; }
+    .grid-container .row .col-2\/2 {
+      width: 100%; }
+    .grid-container .row .col-1\/3 {
+      width: 33.33%; }
+    .grid-container .row .col-2\/3 {
+      width: 66.66%; }
+    .grid-container .row .col-3\/3 {
+      width: 100%; }
+    .grid-container .row .col-1\/4 {
+      width: 25%; }
+    .grid-container .row .col-2\/4 {
+      width: 50%; }
+    .grid-container .row .col-3\/4 {
+      width: 75%; }
+    .grid-container .row .col-4\/4 {
+      width: 100%; }
+    .grid-container .row .col-1\/5 {
+      width: 20%; }
+    .grid-container .row .col-2\/5 {
+      width: 40%; }
+    .grid-container .row .col-3\/5 {
+      width: 60%; }
+    .grid-container .row .col-4\/5 {
+      width: 80%; }
+    .grid-container .row .col-5\/5 {
+      width: 100%; }
+    .grid-container .row .col-1\/6 {
+      width: 16.66%; }
+    .grid-container .row .col-2\/6 {
+      width: 33.33%; }
+    .grid-container .row .col-3\/6 {
+      width: 50%; }
+    .grid-container .row .col-4\/6 {
+      width: 66.66%; }
+    .grid-container .row .col-5\/6 {
+      width: 83.33%; }
+    .grid-container .row .col-6\/6 {
+      width: 100%; }
+    .grid-container .row .col-1\/7 {
+      width: 14.28%; }
+    .grid-container .row .col-2\/7 {
+      width: 28.57%; }
+    .grid-container .row .col-3\/7 {
+      width: 42.85%; }
+    .grid-container .row .col-4\/7 {
+      width: 57.14%; }
+    .grid-container .row .col-5\/7 {
+      width: 71.42%; }
+    .grid-container .row .col-6\/7 {
+      width: 85.71%; }
+    .grid-container .row .col-7\/7 {
+      width: 100%; }
+    .grid-container .row .col-1\/8 {
+      width: 12.5%; }
+    .grid-container .row .col-2\/8 {
+      width: 25%; }
+    .grid-container .row .col-3\/8 {
+      width: 37.5%; }
+    .grid-container .row .col-4\/8 {
+      width: 50%; }
+    .grid-container .row .col-5\/8 {
+      width: 62.5%; }
+    .grid-container .row .col-6\/8 {
+      width: 75%; }
+    .grid-container .row .col-7\/8 {
+      width: 87.5%; }
+    .grid-container .row .col-8\/8 {
+      width: 100%; }
+    .grid-container .row .col-1\/9 {
+      width: 11.11%; }
+    .grid-container .row .col-2\/9 {
+      width: 22.22%; }
+    .grid-container .row .col-3\/9 {
+      width: 33.33%; }
+    .grid-container .row .col-4\/9 {
+      width: 44.44%; }
+    .grid-container .row .col-5\/9 {
+      width: 55.55%; }
+    .grid-container .row .col-6\/9 {
+      width: 66.66%; }
+    .grid-container .row .col-7\/9 {
+      width: 77.77%; }
+    .grid-container .row .col-8\/9 {
+      width: 88.88%; }
+    .grid-container .row .col-9\/9 {
+      width: 100%; }
+    .grid-container .row .col-1\/10 {
+      width: 10%; }
+    .grid-container .row .col-2\/10 {
+      width: 20%; }
+    .grid-container .row .col-3\/10 {
+      width: 30%; }
+    .grid-container .row .col-4\/10 {
+      width: 40%; }
+    .grid-container .row .col-5\/10 {
+      width: 50%; }
+    .grid-container .row .col-6\/10 {
+      width: 60%; }
+    .grid-container .row .col-7\/10 {
+      width: 70%; }
+    .grid-container .row .col-8\/10 {
+      width: 80%; }
+    .grid-container .row .col-9\/10 {
+      width: 90%; }
+    .grid-container .row .col-10\/10 {
+      width: 100%; }
+    .grid-container .row .col-1\/11 {
+      width: 9.09%; }
+    .grid-container .row .col-2\/11 {
+      width: 18.18%; }
+    .grid-container .row .col-3\/11 {
+      width: 27.27%; }
+    .grid-container .row .col-4\/11 {
+      width: 36.36%; }
+    .grid-container .row .col-5\/11 {
+      width: 45.45%; }
+    .grid-container .row .col-6\/11 {
+      width: 54.54%; }
+    .grid-container .row .col-7\/11 {
+      width: 63.63%; }
+    .grid-container .row .col-8\/11 {
+      width: 72.72%; }
+    .grid-container .row .col-9\/11 {
+      width: 81.81%; }
+    .grid-container .row .col-10\/11 {
+      width: 90.9%; }
+    .grid-container .row .col-11\/11 {
+      width: 100%; }
+    .grid-container .row .col-1\/12 {
+      width: 8.33%; }
+    .grid-container .row .col-2\/12 {
+      width: 16.66%; }
+    .grid-container .row .col-3\/12 {
+      width: 25%; }
+    .grid-container .row .col-4\/12 {
+      width: 33.33%; }
+    .grid-container .row .col-5\/12 {
+      width: 41.66%; }
+    .grid-container .row .col-6\/12 {
+      width: 50%; }
+    .grid-container .row .col-7\/12 {
+      width: 58.33%; }
+    .grid-container .row .col-8\/12 {
+      width: 66.66%; }
+    .grid-container .row .col-9\/12 {
+      width: 75%; }
+    .grid-container .row .col-10\/12 {
+      width: 83.33%; }
+    .grid-container .row .col-11\/12 {
+      width: 91.66%; }
+    .grid-container .row .col-12\/12 {
+      width: 100%; }
+    @media only screen and (min-width: 550px) {
+      .grid-container .row .col-xs-1\/1 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/2 {
+        width: 50%; }
+      .grid-container .row .col-xs-2\/2 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/3 {
+        width: 33.33%; }
+      .grid-container .row .col-xs-2\/3 {
+        width: 66.66%; }
+      .grid-container .row .col-xs-3\/3 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/4 {
+        width: 25%; }
+      .grid-container .row .col-xs-2\/4 {
+        width: 50%; }
+      .grid-container .row .col-xs-3\/4 {
+        width: 75%; }
+      .grid-container .row .col-xs-4\/4 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/5 {
+        width: 20%; }
+      .grid-container .row .col-xs-2\/5 {
+        width: 40%; }
+      .grid-container .row .col-xs-3\/5 {
+        width: 60%; }
+      .grid-container .row .col-xs-4\/5 {
+        width: 80%; }
+      .grid-container .row .col-xs-5\/5 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/6 {
+        width: 16.66%; }
+      .grid-container .row .col-xs-2\/6 {
+        width: 33.33%; }
+      .grid-container .row .col-xs-3\/6 {
+        width: 50%; }
+      .grid-container .row .col-xs-4\/6 {
+        width: 66.66%; }
+      .grid-container .row .col-xs-5\/6 {
+        width: 83.33%; }
+      .grid-container .row .col-xs-6\/6 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/7 {
+        width: 14.28%; }
+      .grid-container .row .col-xs-2\/7 {
+        width: 28.57%; }
+      .grid-container .row .col-xs-3\/7 {
+        width: 42.85%; }
+      .grid-container .row .col-xs-4\/7 {
+        width: 57.14%; }
+      .grid-container .row .col-xs-5\/7 {
+        width: 71.42%; }
+      .grid-container .row .col-xs-6\/7 {
+        width: 85.71%; }
+      .grid-container .row .col-xs-7\/7 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/8 {
+        width: 12.5%; }
+      .grid-container .row .col-xs-2\/8 {
+        width: 25%; }
+      .grid-container .row .col-xs-3\/8 {
+        width: 37.5%; }
+      .grid-container .row .col-xs-4\/8 {
+        width: 50%; }
+      .grid-container .row .col-xs-5\/8 {
+        width: 62.5%; }
+      .grid-container .row .col-xs-6\/8 {
+        width: 75%; }
+      .grid-container .row .col-xs-7\/8 {
+        width: 87.5%; }
+      .grid-container .row .col-xs-8\/8 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/9 {
+        width: 11.11%; }
+      .grid-container .row .col-xs-2\/9 {
+        width: 22.22%; }
+      .grid-container .row .col-xs-3\/9 {
+        width: 33.33%; }
+      .grid-container .row .col-xs-4\/9 {
+        width: 44.44%; }
+      .grid-container .row .col-xs-5\/9 {
+        width: 55.55%; }
+      .grid-container .row .col-xs-6\/9 {
+        width: 66.66%; }
+      .grid-container .row .col-xs-7\/9 {
+        width: 77.77%; }
+      .grid-container .row .col-xs-8\/9 {
+        width: 88.88%; }
+      .grid-container .row .col-xs-9\/9 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/10 {
+        width: 10%; }
+      .grid-container .row .col-xs-2\/10 {
+        width: 20%; }
+      .grid-container .row .col-xs-3\/10 {
+        width: 30%; }
+      .grid-container .row .col-xs-4\/10 {
+        width: 40%; }
+      .grid-container .row .col-xs-5\/10 {
+        width: 50%; }
+      .grid-container .row .col-xs-6\/10 {
+        width: 60%; }
+      .grid-container .row .col-xs-7\/10 {
+        width: 70%; }
+      .grid-container .row .col-xs-8\/10 {
+        width: 80%; }
+      .grid-container .row .col-xs-9\/10 {
+        width: 90%; }
+      .grid-container .row .col-xs-10\/10 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/11 {
+        width: 9.09%; }
+      .grid-container .row .col-xs-2\/11 {
+        width: 18.18%; }
+      .grid-container .row .col-xs-3\/11 {
+        width: 27.27%; }
+      .grid-container .row .col-xs-4\/11 {
+        width: 36.36%; }
+      .grid-container .row .col-xs-5\/11 {
+        width: 45.45%; }
+      .grid-container .row .col-xs-6\/11 {
+        width: 54.54%; }
+      .grid-container .row .col-xs-7\/11 {
+        width: 63.63%; }
+      .grid-container .row .col-xs-8\/11 {
+        width: 72.72%; }
+      .grid-container .row .col-xs-9\/11 {
+        width: 81.81%; }
+      .grid-container .row .col-xs-10\/11 {
+        width: 90.9%; }
+      .grid-container .row .col-xs-11\/11 {
+        width: 100%; }
+      .grid-container .row .col-xs-1\/12 {
+        width: 8.33%; }
+      .grid-container .row .col-xs-2\/12 {
+        width: 16.66%; }
+      .grid-container .row .col-xs-3\/12 {
+        width: 25%; }
+      .grid-container .row .col-xs-4\/12 {
+        width: 33.33%; }
+      .grid-container .row .col-xs-5\/12 {
+        width: 41.66%; }
+      .grid-container .row .col-xs-6\/12 {
+        width: 50%; }
+      .grid-container .row .col-xs-7\/12 {
+        width: 58.33%; }
+      .grid-container .row .col-xs-8\/12 {
+        width: 66.66%; }
+      .grid-container .row .col-xs-9\/12 {
+        width: 75%; }
+      .grid-container .row .col-xs-10\/12 {
+        width: 83.33%; }
+      .grid-container .row .col-xs-11\/12 {
+        width: 91.66%; }
+      .grid-container .row .col-xs-12\/12 {
+        width: 100%; } }
+    @media only screen and (min-width: 768px) {
+      .grid-container .row .col-md-1\/1 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/2 {
+        width: 50%; }
+      .grid-container .row .col-md-2\/2 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/3 {
+        width: 33.33%; }
+      .grid-container .row .col-md-2\/3 {
+        width: 66.66%; }
+      .grid-container .row .col-md-3\/3 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/4 {
+        width: 25%; }
+      .grid-container .row .col-md-2\/4 {
+        width: 50%; }
+      .grid-container .row .col-md-3\/4 {
+        width: 75%; }
+      .grid-container .row .col-md-4\/4 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/5 {
+        width: 20%; }
+      .grid-container .row .col-md-2\/5 {
+        width: 40%; }
+      .grid-container .row .col-md-3\/5 {
+        width: 60%; }
+      .grid-container .row .col-md-4\/5 {
+        width: 80%; }
+      .grid-container .row .col-md-5\/5 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/6 {
+        width: 16.66%; }
+      .grid-container .row .col-md-2\/6 {
+        width: 33.33%; }
+      .grid-container .row .col-md-3\/6 {
+        width: 50%; }
+      .grid-container .row .col-md-4\/6 {
+        width: 66.66%; }
+      .grid-container .row .col-md-5\/6 {
+        width: 83.33%; }
+      .grid-container .row .col-md-6\/6 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/7 {
+        width: 14.28%; }
+      .grid-container .row .col-md-2\/7 {
+        width: 28.57%; }
+      .grid-container .row .col-md-3\/7 {
+        width: 42.85%; }
+      .grid-container .row .col-md-4\/7 {
+        width: 57.14%; }
+      .grid-container .row .col-md-5\/7 {
+        width: 71.42%; }
+      .grid-container .row .col-md-6\/7 {
+        width: 85.71%; }
+      .grid-container .row .col-md-7\/7 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/8 {
+        width: 12.5%; }
+      .grid-container .row .col-md-2\/8 {
+        width: 25%; }
+      .grid-container .row .col-md-3\/8 {
+        width: 37.5%; }
+      .grid-container .row .col-md-4\/8 {
+        width: 50%; }
+      .grid-container .row .col-md-5\/8 {
+        width: 62.5%; }
+      .grid-container .row .col-md-6\/8 {
+        width: 75%; }
+      .grid-container .row .col-md-7\/8 {
+        width: 87.5%; }
+      .grid-container .row .col-md-8\/8 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/9 {
+        width: 11.11%; }
+      .grid-container .row .col-md-2\/9 {
+        width: 22.22%; }
+      .grid-container .row .col-md-3\/9 {
+        width: 33.33%; }
+      .grid-container .row .col-md-4\/9 {
+        width: 44.44%; }
+      .grid-container .row .col-md-5\/9 {
+        width: 55.55%; }
+      .grid-container .row .col-md-6\/9 {
+        width: 66.66%; }
+      .grid-container .row .col-md-7\/9 {
+        width: 77.77%; }
+      .grid-container .row .col-md-8\/9 {
+        width: 88.88%; }
+      .grid-container .row .col-md-9\/9 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/10 {
+        width: 10%; }
+      .grid-container .row .col-md-2\/10 {
+        width: 20%; }
+      .grid-container .row .col-md-3\/10 {
+        width: 30%; }
+      .grid-container .row .col-md-4\/10 {
+        width: 40%; }
+      .grid-container .row .col-md-5\/10 {
+        width: 50%; }
+      .grid-container .row .col-md-6\/10 {
+        width: 60%; }
+      .grid-container .row .col-md-7\/10 {
+        width: 70%; }
+      .grid-container .row .col-md-8\/10 {
+        width: 80%; }
+      .grid-container .row .col-md-9\/10 {
+        width: 90%; }
+      .grid-container .row .col-md-10\/10 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/11 {
+        width: 9.09%; }
+      .grid-container .row .col-md-2\/11 {
+        width: 18.18%; }
+      .grid-container .row .col-md-3\/11 {
+        width: 27.27%; }
+      .grid-container .row .col-md-4\/11 {
+        width: 36.36%; }
+      .grid-container .row .col-md-5\/11 {
+        width: 45.45%; }
+      .grid-container .row .col-md-6\/11 {
+        width: 54.54%; }
+      .grid-container .row .col-md-7\/11 {
+        width: 63.63%; }
+      .grid-container .row .col-md-8\/11 {
+        width: 72.72%; }
+      .grid-container .row .col-md-9\/11 {
+        width: 81.81%; }
+      .grid-container .row .col-md-10\/11 {
+        width: 90.9%; }
+      .grid-container .row .col-md-11\/11 {
+        width: 100%; }
+      .grid-container .row .col-md-1\/12 {
+        width: 8.33%; }
+      .grid-container .row .col-md-2\/12 {
+        width: 16.66%; }
+      .grid-container .row .col-md-3\/12 {
+        width: 25%; }
+      .grid-container .row .col-md-4\/12 {
+        width: 33.33%; }
+      .grid-container .row .col-md-5\/12 {
+        width: 41.66%; }
+      .grid-container .row .col-md-6\/12 {
+        width: 50%; }
+      .grid-container .row .col-md-7\/12 {
+        width: 58.33%; }
+      .grid-container .row .col-md-8\/12 {
+        width: 66.66%; }
+      .grid-container .row .col-md-9\/12 {
+        width: 75%; }
+      .grid-container .row .col-md-10\/12 {
+        width: 83.33%; }
+      .grid-container .row .col-md-11\/12 {
+        width: 91.66%; }
+      .grid-container .row .col-md-12\/12 {
+        width: 100%; } }
+    @media only screen and (min-width: 1024px) {
+      .grid-container .row .col-lg-1\/1 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/2 {
+        width: 50%; }
+      .grid-container .row .col-lg-2\/2 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/3 {
+        width: 33.33%; }
+      .grid-container .row .col-lg-2\/3 {
+        width: 66.66%; }
+      .grid-container .row .col-lg-3\/3 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/4 {
+        width: 25%; }
+      .grid-container .row .col-lg-2\/4 {
+        width: 50%; }
+      .grid-container .row .col-lg-3\/4 {
+        width: 75%; }
+      .grid-container .row .col-lg-4\/4 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/5 {
+        width: 20%; }
+      .grid-container .row .col-lg-2\/5 {
+        width: 40%; }
+      .grid-container .row .col-lg-3\/5 {
+        width: 60%; }
+      .grid-container .row .col-lg-4\/5 {
+        width: 80%; }
+      .grid-container .row .col-lg-5\/5 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/6 {
+        width: 16.66%; }
+      .grid-container .row .col-lg-2\/6 {
+        width: 33.33%; }
+      .grid-container .row .col-lg-3\/6 {
+        width: 50%; }
+      .grid-container .row .col-lg-4\/6 {
+        width: 66.66%; }
+      .grid-container .row .col-lg-5\/6 {
+        width: 83.33%; }
+      .grid-container .row .col-lg-6\/6 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/7 {
+        width: 14.28%; }
+      .grid-container .row .col-lg-2\/7 {
+        width: 28.57%; }
+      .grid-container .row .col-lg-3\/7 {
+        width: 42.85%; }
+      .grid-container .row .col-lg-4\/7 {
+        width: 57.14%; }
+      .grid-container .row .col-lg-5\/7 {
+        width: 71.42%; }
+      .grid-container .row .col-lg-6\/7 {
+        width: 85.71%; }
+      .grid-container .row .col-lg-7\/7 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/8 {
+        width: 12.5%; }
+      .grid-container .row .col-lg-2\/8 {
+        width: 25%; }
+      .grid-container .row .col-lg-3\/8 {
+        width: 37.5%; }
+      .grid-container .row .col-lg-4\/8 {
+        width: 50%; }
+      .grid-container .row .col-lg-5\/8 {
+        width: 62.5%; }
+      .grid-container .row .col-lg-6\/8 {
+        width: 75%; }
+      .grid-container .row .col-lg-7\/8 {
+        width: 87.5%; }
+      .grid-container .row .col-lg-8\/8 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/9 {
+        width: 11.11%; }
+      .grid-container .row .col-lg-2\/9 {
+        width: 22.22%; }
+      .grid-container .row .col-lg-3\/9 {
+        width: 33.33%; }
+      .grid-container .row .col-lg-4\/9 {
+        width: 44.44%; }
+      .grid-container .row .col-lg-5\/9 {
+        width: 55.55%; }
+      .grid-container .row .col-lg-6\/9 {
+        width: 66.66%; }
+      .grid-container .row .col-lg-7\/9 {
+        width: 77.77%; }
+      .grid-container .row .col-lg-8\/9 {
+        width: 88.88%; }
+      .grid-container .row .col-lg-9\/9 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/10 {
+        width: 10%; }
+      .grid-container .row .col-lg-2\/10 {
+        width: 20%; }
+      .grid-container .row .col-lg-3\/10 {
+        width: 30%; }
+      .grid-container .row .col-lg-4\/10 {
+        width: 40%; }
+      .grid-container .row .col-lg-5\/10 {
+        width: 50%; }
+      .grid-container .row .col-lg-6\/10 {
+        width: 60%; }
+      .grid-container .row .col-lg-7\/10 {
+        width: 70%; }
+      .grid-container .row .col-lg-8\/10 {
+        width: 80%; }
+      .grid-container .row .col-lg-9\/10 {
+        width: 90%; }
+      .grid-container .row .col-lg-10\/10 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/11 {
+        width: 9.09%; }
+      .grid-container .row .col-lg-2\/11 {
+        width: 18.18%; }
+      .grid-container .row .col-lg-3\/11 {
+        width: 27.27%; }
+      .grid-container .row .col-lg-4\/11 {
+        width: 36.36%; }
+      .grid-container .row .col-lg-5\/11 {
+        width: 45.45%; }
+      .grid-container .row .col-lg-6\/11 {
+        width: 54.54%; }
+      .grid-container .row .col-lg-7\/11 {
+        width: 63.63%; }
+      .grid-container .row .col-lg-8\/11 {
+        width: 72.72%; }
+      .grid-container .row .col-lg-9\/11 {
+        width: 81.81%; }
+      .grid-container .row .col-lg-10\/11 {
+        width: 90.9%; }
+      .grid-container .row .col-lg-11\/11 {
+        width: 100%; }
+      .grid-container .row .col-lg-1\/12 {
+        width: 8.33%; }
+      .grid-container .row .col-lg-2\/12 {
+        width: 16.66%; }
+      .grid-container .row .col-lg-3\/12 {
+        width: 25%; }
+      .grid-container .row .col-lg-4\/12 {
+        width: 33.33%; }
+      .grid-container .row .col-lg-5\/12 {
+        width: 41.66%; }
+      .grid-container .row .col-lg-6\/12 {
+        width: 50%; }
+      .grid-container .row .col-lg-7\/12 {
+        width: 58.33%; }
+      .grid-container .row .col-lg-8\/12 {
+        width: 66.66%; }
+      .grid-container .row .col-lg-9\/12 {
+        width: 75%; }
+      .grid-container .row .col-lg-10\/12 {
+        width: 83.33%; }
+      .grid-container .row .col-lg-11\/12 {
+        width: 91.66%; }
+      .grid-container .row .col-lg-12\/12 {
+        width: 100%; } }
+    .grid-container .row .col-padding {
+      padding: 0 2.5px; }
+
+.main-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px; }
+
+.row {
+  background: #e3e3e3; }
+
+.col {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.column-wrapper {
+  background: #8fc5ff;
+  text-align: center;
+  min-height: 50px;
+  border: 1px solid;
+  border-collapse: collapse; }
+
+h5 {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px; }

@@ -1,0 +1,115 @@
+$breakpoint-mobile: 550px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1200px;
+
+
+@function percentage($target, $container) {
+  $width: ($target / $container);
+  //restrict the result to two decimals points in order to avoid rounding at big numbers
+  // e.g. 2/3 would result to 66.66666667 instead it is calculated as 66.66%
+  @return floor($width * 10000) / 10000 * 100%;
+}
+
+@mixin columns-width($columns-count,  $device: "") {
+  @for $x from 1 through $columns-count {
+    @for $y from 1 through $x {
+      &#{$device}-#{$y}\/#{$x} {
+        width: percentage($y, $x);
+      }
+    }
+  }
+}
+
+@mixin columns($columns-count, $breakpoint: false) {
+  @if $breakpoint {
+
+    @media only screen and (min-width: $breakpoint) {
+      $device: "";
+      @if $breakpoint == $breakpoint-mobile {
+        $device: "xs";
+      }
+      @if $breakpoint == $breakpoint-tablet {
+        $device: "md";
+      }
+      @if $breakpoint == $breakpoint-desktop {
+        $device: "lg";
+      }
+      @include columns-width($columns-count, "-#{$device}");
+    }
+
+  } @else {
+    @include columns-width($columns-count);
+  }
+}
+
+
+@mixin col($columns-count, $padding:0 ) {
+  @include columns($columns-count);
+  @include columns($columns-count, $breakpoint: $breakpoint-mobile);
+  @include columns($columns-count, $breakpoint: $breakpoint-tablet);
+  @include columns($columns-count, $breakpoint: $breakpoint-desktop);
+
+  @if ($padding > 0) {
+    &-padding {
+      padding: 0 $padding+0px;
+    }
+
+  }
+}
+
+
+@mixin row($row-name:"row",$column-name:"col",$columns-count:12, $gutter: 0) {
+
+  $gutter: $gutter/2;
+  .#{$row-name} {
+    display: block;
+    height: 100%;
+    letter-spacing: -.215em;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    overflow: initial;
+
+    &:before, &:after {
+      display: table;
+      content: " ";
+      clear: both;
+    }
+
+
+    @if ($gutter > 0) {
+      $gutter: $gutter/2;
+      &-padding {
+        margin: 0 -$gutter+0px;
+      }
+    }
+
+    &__table {
+      display: table;
+      width: 100%;
+
+      .#{$column-name} {
+        display: table-cell !important;
+        vertical-align: middle !important;
+      }
+    }
+
+    .#{$column-name} {
+      display: inline-block;
+      height: 100%;
+      letter-spacing: normal;
+      vertical-align: top;
+      float: left;
+      box-sizing: border-box;
+
+      @include col($columns-count, $gutter);
+    }
+  }
+
+}
+
+
+
+
+
