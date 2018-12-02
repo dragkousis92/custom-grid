@@ -32,8 +32,8 @@ col-lg-1/2 col-md-1/2 col-xs-1/2
 </div>
 ```
 # To use the demo
-Clone the repo
-Install gulp from package.json to compile the sass 
+Clone the repo.
+Install gulp from package.json to compile the sass. 
 Resize the window
 
 License
